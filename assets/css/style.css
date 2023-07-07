@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #374151;
+    color: white;
+}
+
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+/* header -- #taskForm  #taskInput #taskSubmit */
+header{
+    padding: 2rem 1rem;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+#taskForm{
+    display: flex;
+}
+
+#taskInput{
+    background-color: #1f2937;
+    padding: 1rem;
+    flex: 1 1 0%;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    color:#EEE;
+    border-radius: 1rem;
+}
+
+#taskInput::placeholder{
+    color: gray;
+}
+
+#taskSubmit{
+    color: #d194d1;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #35020bc9,#d194d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#taskSubmit:hover{
+    opacity: 0.8;
+}
+
+#taskSubmit:active{
+    opacity: 0.6;
+}
+
+/* main -- #taskList  #toDo  .toDoList .actions .edit .delete */
+main{
+    padding: 1rem;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+}
+#taskList h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: gray;
+    margin-bottom: 1rem;
+}
+.toDo{
+    display: flex;
+    justify-content: space-between;
+    background-color: #12161cc9;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+}
+
+.toDo .toDoList{
+    flex: 1 1 0%;
+}
+
+.toDo .toDoList .text{
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.toDo .toDoList .text:not(:read-only){
+    color: #d194d1;
+}
+
+.toDo .actions{
+    display: flex;
+    gap: 1rem;
+}
+
+.toDo .actions:hover{
+    opacity: 0.8;
+}
+
+.toDo .actions:active{
+    opacity: 0.6;
+}
+.toDo .actions .edit{ 
+color: #d194d1;
+font-size: 1.25rem;
+font-weight: 700;
+background-image: linear-gradient(to right, #35020bc9,#d194d1);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+cursor: pointer;
+transition: 0.4s;}
+
+.toDo .actions .Delete{ 
+    color: #eb0d20;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #65212dad,#eb0d20);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
